@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_diff_between_From_and_To_Dates</fullName>
+    <active>true</active>
+    <errorConditionFormula>(DATETIMEVALUE( To_Date__c ) -  DATETIMEVALUE( From_Date__c )) &lt; 0</errorConditionFormula>
+    <errorDisplayField>To_Date__c</errorDisplayField>
+    <errorMessage>Difference between To Date &amp; From Date should be atleast 30 minutes</errorMessage>
+</ValidationRule>

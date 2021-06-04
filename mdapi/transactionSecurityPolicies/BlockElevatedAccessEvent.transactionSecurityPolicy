@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TransactionSecurityPolicy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <action>
+        <block>true</block>
+        <endSession>false</endSession>
+        <freezeUser>false</freezeUser>
+        <notifications>
+            <inApp>true</inApp>
+            <sendEmail>true</sendEmail>
+            <user>venkatramans@fcsamerica.com.acctpoc</user>
+        </notifications>
+        <twoFactorAuthentication>false</twoFactorAuthentication>
+    </action>
+    <active>false</active>
+    <apexClass>BlockElevatedAccessEventCondition</apexClass>
+    <description>To block elevated access without proper approval and without high assurance session</description>
+    <developerName>BlockElevatedAccessEvent</developerName>
+    <eventName>LoginEvent</eventName>
+    <masterLabel>BlockElevatedAccessEvent</masterLabel>
+    <type>CustomApexPolicy</type>
+</TransactionSecurityPolicy>

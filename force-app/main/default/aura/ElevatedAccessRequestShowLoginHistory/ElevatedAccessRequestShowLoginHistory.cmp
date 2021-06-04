@@ -1,0 +1,21 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId"
+                controller="ElevatedAccessRequestController" >
+     
+    <aura:attribute type="LoginHistory[]" name="lhList" />
+    <aura:attribute name="mycolumns" type="List" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.fetchLH}"/>
+    <aura:handler event="force:refreshView" action="{!c.fetchLH}" />
+     
+    <div>
+		<h3 class="slds-section-title--divider">Login History</h3>
+        
+        <div class="slds-box" >
+            <lightning:datatable data="{! v.lhList }"
+                                 columns="{! v.mycolumns }"
+                                 keyField="Id"
+                                 hideCheckboxColumn="true"/>
+        </div>
+    </div>
+     
+</aura:component>

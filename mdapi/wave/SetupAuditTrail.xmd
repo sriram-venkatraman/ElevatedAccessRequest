@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset>SetupAuditTrail</dataset>
+    <dates>
+        <alias>Created Date</alias>
+        <firstDayOfWeek>-1</firstDayOfWeek>
+        <fiscalMonthOffset>0</fiscalMonthOffset>
+        <label>Action Date</label>
+        <sortIndex>0</sortIndex>
+        <type xsi:nil="true"/>
+    </dates>
+    <dimensions>
+        <field>User.Name</field>
+        <isDerived>false</isDerived>
+        <label>User Name</label>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Display</field>
+        <isDerived>false</isDerived>
+        <label>Action</label>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Action</field>
+        <isDerived>false</isDerived>
+        <label>Action Code</label>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+</WaveXmd>

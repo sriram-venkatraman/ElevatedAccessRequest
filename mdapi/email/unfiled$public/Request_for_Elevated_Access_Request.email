@@ -1,0 +1,4 @@
+Please Approve or Reject Elevated Access Request for {!Elevated_Access_Request__c.For_User_Name__c}
+From Date: {!Elevated_Access_Request__c.From_Date__c}
+To Date: {!Elevated_Access_Request__c.To_Date__c}
+Reason: {!Elevated_Access_Request__c.Reason__c}
