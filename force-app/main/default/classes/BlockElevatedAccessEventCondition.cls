@@ -19,9 +19,9 @@ global class BlockElevatedAccessEventCondition implements TxnSecurity.EventCondi
         
         if (u != null) {
             // Ensure we are not blocking out every System Admin. Ensure couple of power users can always access the system 
-            if ( u.UserName == 'venkatramans@fcsamerica.com.acctpoc' ) return false;
+            if ( u.UserName == 'venkatramans@dummyco.com.acctpoc' ) return false;
             
-            if ( u.UserName != 'venkatramans@fcsamerica.com.acctpoc' && 
+            if ( u.UserName != 'venkatramans@dummyco.com.acctpoc' && 
                 u.Profile.Name == 'System Administrator' ) {
                     datetime currentTime = datetime.now();
                     System.Debug('Now: ' + currentTime);
